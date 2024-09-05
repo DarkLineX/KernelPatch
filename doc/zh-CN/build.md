@@ -1,6 +1,6 @@
 # KernelPatch编译文档
 
-## 编译kpimg模块
+## 编译kpimg
 
 ### 下载编译环境配置
 
@@ -15,7 +15,7 @@ export ANDROID=1 # Android version, including support for the 'su' command
 make
 ```
 
-## 编译kptools模块
+## 编译kptools
 
 kptools可以在任何地方运行，只需编译即可。
 
@@ -37,7 +37,7 @@ cmake ..
 make
 ```
 
-## 编译kpatch模块
+## 编译kpatch
 
 
 kpatch在目标系统的用户空间中运行，因此您可以像往常一样构建它。
