@@ -9,3 +9,4 @@
 
 ## KernelPatch个人注释版本，无任何参考意义。
 ## 想学习的去原项目地址->[KernelPatch](https://github.com/bmax121/KernelPatch)
+## 中文文档地址 [README_zh](README_zh.md)
