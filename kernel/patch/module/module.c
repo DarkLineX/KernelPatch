@@ -272,8 +272,10 @@ static int rewrite_section_headers(struct load_info *info)
     return 0;
 }
 
-//这段代码定义了一个 move_module 函数，用于将一个模块加载到内存中并处理其各个段的搬移和初始化。
-//它操作的是一个模块结构体（struct module），这个结构体包含了模块的地址、大小、初始化、控制以及退出等相关的回调函数。
+//这段代码定义了一个 move_module 函数，
+//用于将一个模块加载到内存中并处理其各个段的搬移和初始化。
+//它操作的是一个模块结构体（struct module），
+//这个结构体包含了模块的地址、大小、初始化、控制以及退出等相关的回调函数。
 static int move_module(struct module *mod, struct load_info *info)
 {
     // todo:
@@ -402,6 +404,8 @@ static int elf_header_check(struct load_info *info)
 struct module modules = { 0 };
 static spinlock_t module_lock;
 
+
+//加载模块 
 long load_module(const void *data, int len, const char *args, const char *event, void *__user reserved)
 {
     struct load_info load_info = { .len = len, .hdr = data };
