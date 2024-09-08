@@ -16,7 +16,7 @@
 - 提供 kernel function inline hook 和 syscall table hook。
 - 适用于 Android 的其他 SU。
 
-如果您使用的是 Android，[APatch]（https://github.com/bmax121/APatch） 将是更好的选择。
+如果您使用的是 Android，[APatch](https://github.com/bmax121/APatch) 将是更好的选择。
 
 ## 要求
 

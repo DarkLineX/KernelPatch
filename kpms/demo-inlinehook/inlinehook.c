@@ -22,11 +22,13 @@ int __noinline add(int a, int b)
     return ret;
 }
 
+//打印参数
 void before_add(hook_fargs2_t *args, void *udata)
 {
     logkd("before add arg0: %d, arg1: %d\n", (int)args->arg0, (int)args->arg1);
 }
 
+//修改返回
 void after_add(hook_fargs2_t *args, void *udata)
 {
     logkd("after add arg0: %d, arg1: %d, ret: %d\n", (int)args->arg0, (int)args->arg1, (int)args->ret);

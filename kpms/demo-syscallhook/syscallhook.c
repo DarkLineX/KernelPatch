@@ -77,6 +77,7 @@ static long syscall_hook_demo_init(const char *args, const char *event, void *__
     __task_pid_nr_ns = (typeof(__task_pid_nr_ns))kallsyms_lookup_name("__task_pid_nr_ns");
     pr_info("kernel function __task_pid_nr_ns addr: %llx\n", __task_pid_nr_ns);
 
+    // 判断参数
     if (!margs) {
         pr_warn("no args specified, skip hook\n");
         return 0;
